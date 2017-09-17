@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ======================================================================
+                        MOBILE Size: 320px
+========================================================================= */
+
+/*https://stackoverflow.com/questions/37502266/how-do-i-create-a-3x3-grid-via-css*/
+/*https://stackoverflow.com/questions/31621257/how-to-control-number-of-items-per-row-using-media-queries-in-flexbox*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+input {
+  border: solid 1px black;
+  border-radius: 3px;
+  outline: none;
+
+  padding-top: 0.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-bottom: 0.5em;
+}
+input::placeholder {
+  font-size: 0.85em;
+  font-weight: 300;
+}
+input:focus::placeholder {
+  visibility: hidden;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+
+  /*flex-wrap: wrap;*/
+  justify-content: center;
+  align-items: center;
+}
+.gallery div {
+  /*display: flex;*/
+  /*flex-basis: 22%;*/
+  margin-bottom: 0.75em;
+}
+img {
+
+}
+
+
+
+
+
+
+
+
+/* ======================================================================
+                        TABLET Size: 768px Media Query
+========================================================================= */
+
+@media (min-width: 768px) {
+  /**/
+}
+
+
+
+
+
+
+
+
+/* ======================================================================
+                        DESKTOP Size: 1024px Media Query
+========================================================================= */
+
+@media (min-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    /*max-width: 90%;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    margin-left: 16.75em;
+    margin-right: 16.75em;
+
+    margin-left: 16em;
+    margin-right: 16em;
+  }
+
+  form {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    /*display: flex;*/
+    /*max-width: 40%;*/
+    /*width: 40em;*/
+  }
+  input {
+    /*display: flex;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    width: 26em;
+    height: 2.25em;
+    border: solid 1px black;
+    border-radius: 3px;
+    outline: none;
+    padding-top: 1em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-bottom: 1em;
+  }
+  input::placeholder {
+    font-size: 0.85em;
+    font-weight: 300;
+  }
+  input:focus::placeholder {
+    visibility: hidden;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    /*max-width: 75%;*/
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /*flex-basis: 25%;*/
+    margin-top: 1em;
+
+    /* GIVING IT TO WRAPPER */
+    /*margin-left: 16.5em;
+    margin-right: 16.5em;*/
+  }
+  .gallery div {
+    display: flex;
+    flex-basis: 22%;
+    justify-content: center;
+
+    margin-bottom: 3em;
+  }
+  img {
+    /*width: 21%;*/
+    /*flex-basis: 21%;*/
+    /*max-width: 300px;*/
+    /*max-height: 300px;*/
+    /*width: 18.750em;*/
+    /*height: 18.750em;*/
+    /*margin-bottom: 3em;*/
+
+    /*width: 300px;*/
+    /*height: 300px;*/
+
+    width: 14.750em;
+    height: 14.750em;
+
+    max-width: 14.750em;
+    max-height: 14.750em;
+  }
+  img:not(:nth-child(4n)) {
+      /*margin-right: 3em;*/
+  }
+  img {
+      /*margin-right: 3em;*/
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/
