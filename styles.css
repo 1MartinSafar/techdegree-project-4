@@ -21,8 +21,10 @@ form {
   margin-bottom: 1em;
 }
 input {
-  border: solid 1px black;
-  border-radius: 3px;
+  color: #989898;
+  font-weight: bold;
+  border: solid 2px #989898;
+  border-radius: 8px;
   outline: none;
 
   padding-top: 0.5em;
@@ -40,137 +42,235 @@ input:focus::placeholder {
 
 .gallery {
   display: flex;
-  flex-direction: column;
-
-  /*flex-wrap: wrap;*/
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
+  height: auto;
+  max-width: 404px;
+
+  padding-left: 3.25em;
+  padding-right: 3.25em;
+
+  /*padding-left: 2em;*/
+  /*padding-right: 2em;*/
+  padding-left: 0;
+  padding-right: 0;
 }
 .gallery div {
-  /*display: flex;*/
-  /*flex-basis: 22%;*/
+  flex-basis: 45%;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 50%;
+
+  margin-left: 0.25em;
+  margin-right: 0.25em;
   margin-bottom: 0.75em;
+
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+
+  max-width: 30%;
+  max-height: 30%;
+  width: auto;
+  height: auto;
 }
-img {
-
+.gallery img {
+  max-width: 100%;
 }
-
-
-
-
-
-
-
 
 /* ======================================================================
                         TABLET Size: 768px Media Query
 ========================================================================= */
 
 @media (min-width: 768px) {
-  /**/
+
+  form {
+    width: 40%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  input {
+    width: 400px;
+    width: 100%;
+    /*width: 25%;*/
+
+    padding-top: 0.5em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-bottom: 0.5em;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    max-width: 404px;
+    max-width: 700px;
+
+    padding-left: 3.25em;
+    padding-right: 3.25em;
+  }
+  .gallery div {
+    flex-basis: 45%;
+    justify-content: center;
+    align-items: center;
+
+    /*max-width: 50%;*/
+    flex-basis: 33%;
+    max-width: 26%;
+
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    margin-bottom: 0.75em;
+  }
+  .gallery img {
+    max-width: 100%;
+  }
+
 }
-
-
-
-
-
-
-
 
 /* ======================================================================
                         DESKTOP Size: 1024px Media Query
 ========================================================================= */
 
 @media (min-width: 1024px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*flex-wrap: wrap;*/
-    /*max-width: 90%;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    margin-left: 16.75em;
-    margin-right: 16.75em;
-
-    margin-left: 16em;
-    margin-right: 16em;
-  }
 
   form {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    /*display: flex;*/
-    /*max-width: 40%;*/
-    /*width: 40em;*/
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 30%;
+    width: 25%;
+    min-width: 400px;
+    /*height: 40px;*/
+    height: 2.5em;
   }
   input {
-    /*display: flex;*/
-    /*width: 100%;*/
-    /*text-align: center;*/
-    width: 26em;
-    height: 2.25em;
-    border: solid 1px black;
-    border-radius: 3px;
-    outline: none;
-    padding-top: 1em;
+    width: 400px;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 0.5em;
     padding-left: 0.75em;
     padding-right: 0.75em;
-    padding-bottom: 1em;
-  }
-  input::placeholder {
-    font-size: 0.85em;
-    font-weight: 300;
-  }
-  input:focus::placeholder {
-    visibility: hidden;
+    padding-bottom: 0.5em;
   }
 
   .gallery {
     display: flex;
     flex-direction: row;
-    /*max-width: 75%;*/
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
-    /*flex-basis: 25%;*/
-    margin-top: 1em;
+    width: 100%;
+    height: 100%;
+    max-width: 404px;
+    max-width: 700px;
 
-    /* GIVING IT TO WRAPPER */
-    /*margin-left: 16.5em;
-    margin-right: 16.5em;*/
+    max-width: 1000px;
+    max-width: 1400px;
+    max-width: 1700px;
+
+    max-width: 1448px;
+
+    /*min-width: 1190px;*/
+
+    padding-left: 3.25em;
+    padding-right: 3.25em;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    /*padding-left: 3.25em;*/
+    /*padding-right: 3.25em;*/
+    padding-left: 2em;
+    padding-right: 2em;
   }
   .gallery div {
-    display: flex;
-    flex-basis: 22%;
+    flex-basis: 45%;
     justify-content: center;
+    align-items: center;
 
-    margin-bottom: 3em;
+    /*max-width: 50%;*/
+    flex-basis: 21%;
+    max-width: 26%;
+
+    max-width: 24%;
+
+    flex-basis: 0%;
+
+    /*max-width: 14.750em;*/
+    /*max-height: 14.750em;*/
+
+    /*max-width: 350px;*/
+    /*max-height: 350px;*/
+
+    margin-left: 1.1em;
+    margin-right: 1.1em;
+    margin-bottom: 2.5em;
+
+    /*width: 14.75rem;*/
+    /*height: 14.75rem;*/
+
+    /*margin: 0;*/
+    /*padding: 0;*/
+    width: 250px;
+    height: 250px;;
+
+    width: 15.625em;
+    height: 15.625em;
+
+    display: flex;
+
+    flex-basis: 21%;
+
+    max-width: 15.625em;
+    max-height: 15.625em;
+    width: auto;
+    height: auto;
   }
-  img {
-    /*width: 21%;*/
-    /*flex-basis: 21%;*/
-    /*max-width: 300px;*/
-    /*max-height: 300px;*/
-    /*width: 18.750em;*/
-    /*height: 18.750em;*/
-    /*margin-bottom: 3em;*/
+  .gallery img {
+    width: 100%;
+    height: 100%;
 
-    /*width: 300px;*/
-    /*height: 300px;*/
+    width: 14.75rem;
+    height: 14.75rem;
 
-    width: 14.750em;
-    height: 14.750em;
+    width: 12.15em;
+    height: 12.15em;
 
-    max-width: 14.750em;
-    max-height: 14.750em;
-  }
-  img:not(:nth-child(4n)) {
-      /*margin-right: 3em;*/
-  }
-  img {
-      /*margin-right: 3em;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    max-width: 250px;
+    max-height: 250px;
+
+    width: 100%;
+    height: 100%;
+    width: auto;
+    height: auto;
+    /*max-width: */
+
+    /*width: 15.625em;*/
+    /*height: 15.625em;*/
+    /*max-width: 350px;*/
+    /*max-width: 14.750em;*/
+    /*max-height: 14.750em;*/
+    /*width: 14.75em;
+    height: 14.75em;*/
+
+    /*flex-basis: 0%;*/
+    /*flex-basis: 100%;*/
   }
 
 }
