@@ -12,11 +12,12 @@
 
     <div class="wrapper">
 
-      <form action="">
-        <input type="search" placeholder="Search(16pt)">
+      <form action="scripts.js">
+        <!-- <input type="search" placeholder="Search(16pt)" id="searchBar" onkeyup="mySearch()"> -->
+        <input type="search" placeholder="Search(16pt)" id="jQuerySearchBar" onkeyup="jQuerySearch()">
       </form>
 
-      <div class="gallery">
+      <div class="gallery" id="gallery">
 
         <div><a href="photos/01.jpg" data-lightbox="photo-gallery"
           data-title="Hay Bales <br>
@@ -102,9 +103,12 @@
   <script src="lightbox/js/lightbox.min.js"></script>
   <script>
     lightbox.option({
-      'alwaysShowNavOnTouchDevices': true
+      'alwaysShowNavOnTouchDevices' : true,
+      'wrapAround' : true
+
     })
   </script>
+  <script src="scripts.js"></script>
 
   </body>
 </html>
