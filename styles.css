@@ -6,9 +6,6 @@
                         MOBILE Size: 320px
 ========================================================================= */
 
-/*https://stackoverflow.com/questions/37502266/how-do-i-create-a-3x3-grid-via-css*/
-/*https://stackoverflow.com/questions/31621257/how-to-control-number-of-items-per-row-using-media-queries-in-flexbox*/
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -23,7 +20,7 @@ form {
 input {
   color: #989898;
   font-weight: bold;
-  border: solid 2px #989898;
+  border: solid 2px rgba(152, 152, 152, 0.5);
   border-radius: 8px;
   outline: none;
 
@@ -31,6 +28,8 @@ input {
   padding-left: 0.75em;
   padding-right: 0.75em;
   padding-bottom: 0.5em;
+
+  letter-spacing: 1px;
 }
 input::placeholder {
   font-size: 0.85em;
@@ -51,11 +50,6 @@ input:focus::placeholder {
   height: auto;
   max-width: 404px;
 
-  padding-left: 3.25em;
-  padding-right: 3.25em;
-
-  /*padding-left: 2em;*/
-  /*padding-right: 2em;*/
   padding-left: 0;
   padding-right: 0;
 }
@@ -64,12 +58,7 @@ input:focus::placeholder {
   justify-content: center;
   align-items: center;
 
-  max-width: 50%;
-
-  margin-left: 0.25em;
-  margin-right: 0.25em;
   margin-bottom: 0.75em;
-
   margin-left: 0.5em;
   margin-right: 0.5em;
 
@@ -94,9 +83,7 @@ input:focus::placeholder {
     margin-bottom: 1em;
   }
   input {
-    width: 400px;
     width: 100%;
-    /*width: 25%;*/
 
     padding-top: 0.5em;
     padding-left: 0.75em;
@@ -120,11 +107,9 @@ input:focus::placeholder {
     padding-right: 3.25em;
   }
   .gallery div {
-    flex-basis: 45%;
     justify-content: center;
     align-items: center;
 
-    /*max-width: 50%;*/
     flex-basis: 33%;
     max-width: 26%;
 
@@ -145,18 +130,14 @@ input:focus::placeholder {
 @media (min-width: 1024px) {
 
   form {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
     margin-top: 2em;
     margin-bottom: 2em;
-    width: 30%;
+
     width: 25%;
     min-width: 400px;
-    /*height: 40px;*/
     height: 2.5em;
   }
   input {
-    width: 400px;
     width: 100%;
     height: 100%;
 
@@ -175,65 +156,20 @@ input:focus::placeholder {
 
     width: 100%;
     height: 100%;
-    max-width: 404px;
-    max-width: 700px;
-
-    max-width: 1000px;
-    max-width: 1400px;
-    max-width: 1700px;
-
     max-width: 1448px;
 
-    /*min-width: 1190px;*/
-
-    padding-left: 3.25em;
-    padding-right: 3.25em;
-
-    padding-left: 0;
-    padding-right: 0;
-
-    /*padding-left: 3.25em;*/
-    /*padding-right: 3.25em;*/
     padding-left: 2em;
     padding-right: 2em;
   }
   .gallery div {
-    flex-basis: 45%;
+    display: flex;
+    flex-basis: 21%;
     justify-content: center;
     align-items: center;
-
-    /*max-width: 50%;*/
-    flex-basis: 21%;
-    max-width: 26%;
-
-    max-width: 24%;
-
-    flex-basis: 0%;
-
-    /*max-width: 14.750em;*/
-    /*max-height: 14.750em;*/
-
-    /*max-width: 350px;*/
-    /*max-height: 350px;*/
 
     margin-left: 1.1em;
     margin-right: 1.1em;
     margin-bottom: 2.5em;
-
-    /*width: 14.75rem;*/
-    /*height: 14.75rem;*/
-
-    /*margin: 0;*/
-    /*padding: 0;*/
-    width: 250px;
-    height: 250px;;
-
-    width: 15.625em;
-    height: 15.625em;
-
-    display: flex;
-
-    flex-basis: 21%;
 
     max-width: 15.625em;
     max-height: 15.625em;
@@ -241,36 +177,11 @@ input:focus::placeholder {
     height: auto;
   }
   .gallery img {
-    width: 100%;
-    height: 100%;
-
-    width: 14.75rem;
-    height: 14.75rem;
-
-    width: 12.15em;
-    height: 12.15em;
-
-    /*margin: 0;*/
-    /*padding: 0;*/
     max-width: 250px;
     max-height: 250px;
 
-    width: 100%;
-    height: 100%;
     width: auto;
     height: auto;
-    /*max-width: */
-
-    /*width: 15.625em;*/
-    /*height: 15.625em;*/
-    /*max-width: 350px;*/
-    /*max-width: 14.750em;*/
-    /*max-height: 14.750em;*/
-    /*width: 14.75em;
-    height: 14.75em;*/
-
-    /*flex-basis: 0%;*/
-    /*flex-basis: 100%;*/
   }
 
 }
